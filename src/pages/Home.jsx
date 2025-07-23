@@ -12,7 +12,7 @@ const Home = () => {
 		try {
 			const res = await fetch(API_URL);
 			const data = await res.json();
-			console.log(data);
+			// console.log(data);
 			setPosts(data);
 		} catch (error) {
 			console.log("Error occured while fetching data");
