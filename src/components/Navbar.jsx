@@ -8,20 +8,20 @@ const Navbar = () => {
 	return (
 		<div>
 			<nav className="flex items-center justify-between h-20  max-w-6xl mx-auto bg-slate-900">
-				<NavLink to="/">
+				<NavLink to="/ecomzy-shop">
 					<div className="ml-5">
 						<img src="../logo.png" className="h-14" alt="logo" />
 					</div>
 				</NavLink>
 
 				<div className="flex list-none items-center space-x-6 mr-5 text-slate-100 -tracking-tighterr font-medium">
-					<NavLink to="/">
+					<NavLink to="/ecomzy-shop">
 						<p className="cursor-pointer hover:text-green-400 transition duration-300 ease-in">
 							Home
 						</p>
 					</NavLink>
 
-					<NavLink to="/cart">
+					<NavLink to="/ecomzy-shop/cart">
 						<div className="relative">
 							<FaShoppingCart className="text-2xl cursor-pointer hover:text-green-400 transition transform duration-200" />
 							{cart.length > 0 && (
